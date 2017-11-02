@@ -7,15 +7,15 @@ Site Hound was developed under the Memex Program by HyperionGray LLC in partners
 
  1. Role Based Access Control (RBAC).
  2. Multiple __workspaces__ for keeping things tidy.
- 3. Input of __keywords__, to be included or excluded from searchs. 
+ 3. Input of __keywords__, to be included or excluded to the search.
  4. Input of __seeds URLs__, an initial list of websites that you already know are on-topic.
  5. Expand the list of sites by fetching the keywords on multiple commercial search engines.
  6. Displays __screenshots__ (powered by Splash), title, text, html, relevant terms in the text 
  7. Allows the user to __iteratively train__ a topic model based on these results by assigning them into defined values (Relevant/Irrelevant/Neutral), as well as re-scoring the associated keywords.
  8. Allows an unbounded training module based on __user-defined categories__.
  9. __Language detection__ (powered byApache Tika) and __page-type classification__
-10. Allows the user to view the trained topic model through a human-interpretable explaination of the model powered by our machine learning explanation toolkit [https://github.com/TeamHG-Memex/eli5](ELI5)
-11. Performs a __broad crawl__ of thousand of sites, using __Machine Learning__ (provided by [https://github.com/TeamHG-Memex/hh-deep-deep](DeepDeep-crawler)) filtering the ones matching the defined domain.
+10. Allows the user to view the trained topic model through a human-interpretable explaination of the model powered by our machine learning explanation toolkit [ELI5](https://github.com/TeamHG-Memex/eli5)
+11. Performs a __broad crawl__ of thousand of sites, using __Machine Learning__ provided by [DeepDeep-crawler](https://github.com/TeamHG-Memex/hh-deep-deep) filtering the ones matching the defined domain.
 12. Displays the results in an interface similar to __Pinterest__ for easy scrolling of the findings.
 13. Provides __summarized__ data about the broad crawl and __exporting__ of the broad-crawl results in CSV format.
 14. Provides real time information about the __progress__ of the crawlers.
