@@ -10,8 +10,6 @@ INSTALLATION GUIDE
 4. For reference, there is an Architecture Diagram shown below.
 5. Once deployed you will only interact with the application via your browser.
 
-![Architecture diagram](docs/Sitehound-architecture-diagram.png)
-
 
 # Provided Hosted version
 
@@ -134,7 +132,7 @@ The application will be using several external services:
 
 1. Crawlera: a proxy rotator.
 2. Our clustered hosted version of [Splash](https://github.com/scrapinghub/splash).
-3. An onion index hosted by SRI.
+3. An onion index.
 
 
 # You are ready!

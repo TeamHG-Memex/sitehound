@@ -28,7 +28,7 @@ Site Hound was developed under the Memex Program by HyperionGray LLC in partners
 When the app starts up, it will try to connect first with all this components    
 - Mongo (>3.0.*) stores the data about users, workspace and metadata about the crawlings 
 - Elasticsearch (2.0) stores the results of the crawling (screenshots, html, extracted text)
-- Kafka (8.*) handles the communication between the backend components regarding the crawlings.
+- Kafka (10.1.*) handles the communication between the backend components regarding the crawlings.
 
 Custom Docker versions of these components are provided with their extra args to set up the stack correctly, in the Containers section below. 
     
@@ -46,8 +46,7 @@ language identification, page-classification, naive scoring using the cosine dif
 
 
 Here is the components diagram for reference
-![Components Diagram](docs/components-diagram.png)
-
+![Components Diagram](img/components-diagram.png)
 
 
 Check the installation guide [installation](installation/README.md)
