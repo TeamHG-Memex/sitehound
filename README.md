@@ -46,7 +46,7 @@ language identification, page-classification, naive scoring using the cosine dif
 
 
 Here is the components diagram for reference
-![Components Diagram](img/components-diagram.png)
+![Components Diagram](img/Sitehound-architecture-diagram.png)
 
 
 Check the installation guide [installation](installation/README.md)
