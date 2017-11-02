@@ -50,8 +50,8 @@ Here is the components diagram for reference
 
 ### Install:
 
-Check the guide [installation](installation/README.md)
+Check the [installation guide](installation/README.md)
 
 ### How to use it:
 
-Check the walkthrough guide [installation](user-docs/sitehound-walkthrough-guide_October-2017_v2)
+Check the [walkthrough guide](user-docs/sitehound-walkthrough-guide_October-2017_v2)
