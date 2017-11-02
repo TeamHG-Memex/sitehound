@@ -141,7 +141,7 @@ The application will be using several external services:
    (or your Sitehound's IP address).
 2. Log in with user ``admin@hyperiongray.com`` and password ``changeme!``.
 3. Create a new workspace, and click on the row to select it.
-4. Follow this [walk-through](user-docs/sitehound-walkthrough-guide_October-2017_v2.pdf) for a better insight.
+4. Follow this [walk-through](/user-docs/sitehound-walkthrough-guide_October-2017_v2.pdf) for a better insight.
 
 # Help
 
