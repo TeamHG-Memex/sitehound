@@ -49,8 +49,5 @@ Here is the components diagram for reference
 ![Components Diagram](docs/components-diagram.png)
 
 
-### Containers
-Containers are stored in [HyperionGray's docker hub](https://hub.docker.com/u/hyperiongray/dashboard/)
-
 
 Check the installation guide [installation](installation/README.md)
