@@ -54,4 +54,4 @@ Check the [installation guide](installation/README.md)
 
 ### How to use it:
 
-Check the [walkthrough guide](user-docs/sitehound-walkthrough-guide_October-2017_v2)
+Check the [walkthrough guide](user-docs/sitehound-walkthrough-guide_October-2017_v2.pdf)
