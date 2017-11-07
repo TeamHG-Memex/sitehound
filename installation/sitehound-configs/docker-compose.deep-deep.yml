@@ -4,60 +4,77 @@ version: '2.1'
 services:
 
   hh-trainer:
-    image: hyperiongray/hh-deep-deep:0.4.3  # update below too!
+    image: hyperiongray/hh-deep-deep:0.4.8  # update below too!
     restart: always
     depends_on:
       hh-kafka:
         condition: service_healthy
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./deep-deep-jobs:/opt/hh-deep-deep/deep-deep-jobs
+      - ./trainer-jobs:/opt/hh-deep-deep/trainer-jobs
     command:
       - hh-deep-deep-service
       - trainer
+      - --kafka-host=hh-kafka
+      - --docker-image=hyperiongray/deep-deep-hh:0.1.3  # update below too!
+      - --host-root=${PWD}
+      - --proxy-container=hh-deep-deep-tor-proxy
+
+  hh-crawler-trainer:
+    image: hyperiongray/hh-deep-deep:0.4.8  # update below too!
+    restart: always
+    depends_on:
+      hh-kafka:
+        condition: service_healthy
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./crawler-trainer-jobs:/opt/hh-deep-deep/crawler-trainer-jobs
+    command:
+      - hh-deep-deep-service
+      - crawler-trainer
       - --kafka-host=hh-kafka
       - --docker-image=hyperiongray/deep-deep-hh:0.1.3
       - --host-root=${PWD}
       - --proxy-container=hh-deep-deep-tor-proxy
 
   hh-crawler:
-    image: hyperiongray/hh-deep-deep:0.4.3  # update below too!
+    image: hyperiongray/hh-deep-deep:0.4.8  # update below too!
     restart: always
     depends_on:
       hh-kafka:
         condition: service_healthy
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./dd-jobs:/opt/hh-deep-deep/dd-jobs
+      - ./crawler-jobs:/opt/hh-deep-deep/crawler-jobs
     command:
       - hh-deep-deep-service
       - crawler
       - --kafka-host=hh-kafka
-      - --docker-image=hyperiongray/dd-crawler-hh:0.3.4  # update below too!
+      - --docker-image=hyperiongray/dd-crawler-hh:0.3.5  # update below too!
       - --max-workers=8
       - --host-root=${PWD}
       - --proxy-container=hh-deep-deep-tor-proxy
 
   hh-deepcrawler:
-    image: hyperiongray/hh-deep-deep:0.4.3
+    image: hyperiongray/hh-deep-deep:0.4.8
     restart: always
     depends_on:
       hh-kafka:
         condition: service_healthy
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./deep-jobs:/opt/hh-deep-deep/deep-jobs
+      - ./deepcrawler-jobs:/opt/hh-deep-deep/deepcrawler-jobs
     command:
       - hh-deep-deep-service
       - deepcrawler
       - --kafka-host=hh-kafka
-      - --docker-image=hyperiongray/dd-crawler-hh:0.3.4
+      - --docker-image=hyperiongray/dd-crawler-hh:0.3.5
       - --max-workers=8
       - --host-root=${PWD}
       - --proxy-container=hh-deep-deep-tor-proxy
 
   hh-modeler:
-    image: hyperiongray/hh-page-clf:0.5.2  # update git submodule too
+    image: hyperiongray/hh-page-clf:0.5.3  # update git submodule too
     restart: always
     depends_on:
       hh-kafka:

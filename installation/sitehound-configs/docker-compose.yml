@@ -47,10 +47,11 @@ services:
       - "8889"
 
   sitehound:
-    image: hyperiongray/sitehound:5.2.7
+    image: hyperiongray/sitehound:5.3.14
     restart: always
     ports:
       - "5081:5081"
+      - "80:5081"
     links:
       - hh-elasticsearch:elasticsearch
     depends_on:
@@ -62,7 +63,7 @@ services:
         condition: service_healthy
 
   hh-joogle:
-    image: hyperiongray/sitehound-backend:5.2.9
+    image: hyperiongray/sitehound-backend:5.3.7
     restart: always
     volumes:
       - ./volumes/sitehound-backend/config/properties-override:/root/sitehound-backend/config/properties-override/
