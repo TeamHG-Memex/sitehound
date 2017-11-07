@@ -104,7 +104,8 @@ Download deep-deep models on the host where the deep-deep will be running:
 # Running Sitehound + Deep-deep on the same host
 
 1. Sitehound uses external services that are not part of this suite, such as: [Splash](https://github.com/scrapinghub/splash), excavaTor (currently private) for onion searches and [Crawlera](https://scrapinghub.com/crawlera) as a proxy.
-   In order to have the app fully running, you need to specify hosts/credentials for them on the [config file](/installation/sitehound-configs/volumes/sitehound-backend/config/properties-override/properties-override.properties) by replacing the placeholder values with the actual ones
+   In order to have the app fully running, you need to specify hosts/credentials for them on the
+    [config file](/installation/sitehound-configs/volumes/sitehound-backend/config/properties-override/application-override.properties) by replacing the placeholder values with the actual ones
 
 
 2. Make sure port ``5081`` is open.
