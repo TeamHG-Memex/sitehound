@@ -37,7 +37,7 @@ Custom Docker versions of these components are provided with their extra args to
 
 This components offer a suite of capabilities to Site Hound. Only the first three components are required.
 
-- [Sitehound-Frontend](https://github.com/TeamHG-Memex/sitehound-frontend): Performs queries on the Search engines, follows the relevant links and orchestrates the 
+- [Sitehound-Frontend](https://github.com/TeamHG-Memex/sitehound-frontend): The user interface web application that handles auth, metadata and the labeled data.
 - [Sitehound-Backend](https://github.com/TeamHG-Memex/sitehound-backend): Performs queries on the Search engines, follows the relevant links and orchestrates the screenshots, text extraction, 
 language identification, page-classification, naive scoring using the cosine difference of TF*IDF, and stores the results sets.<br>
 - [Splash](https://github.com/scrapinghub/splash): Splash is used for screenshoot and html capturing.
