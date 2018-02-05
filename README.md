@@ -55,3 +55,7 @@ Check the [installation guide](installation/README.md)
 ### How to use it:
 
 Check the [walkthrough guide](user-docs/sitehound-walkthrough-guide_October-2017_v2.pdf)
+
+---
+
+[![define hyperion gray](https://hyperiongray.s3.amazonaws.com/define-hg.svg)](https://hyperiongray.com/?pk_campaign=github&pk_kwd=sitehound "Hyperion Gray")
