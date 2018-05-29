@@ -58,4 +58,4 @@ Check the [walkthrough guide](user-docs/sitehound-walkthrough-guide_October-2017
 
 ---
 
-[![define hyperion gray](https://hyperiongray.s3.amazonaws.com/define-hg.svg)](https://hyperiongray.com/?pk_campaign=github&pk_kwd=sitehound "Hyperion Gray")
+[![define hyperion gray](https://hyperiongray.s3.amazonaws.com/define-hg.svg)](https://www.hyperiongray.com/?pk_campaign=github&pk_kwd=sitehound "Hyperion Gray")
